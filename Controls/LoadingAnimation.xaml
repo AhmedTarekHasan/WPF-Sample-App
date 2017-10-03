@@ -1,0 +1,202 @@
+﻿<UserControl x:Class="WPFRssFeedReader.Controls.LoadingAnimation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:WPFRssFeedReader.Controls"
+    Height="Auto" Width="Auto">
+    <UserControl.Resources>
+        <Style TargetType="Path">
+            <Setter Property="Fill" Value="#FF5482A1" />
+            <Setter Property="Stretch" Value="Fill" />
+            <Setter Property="RenderTransformOrigin" Value="0.5,4.3689" />
+            <Setter Property="Data" Value="M291.15499,85.897525 C291.15499,85.897525 301.88917,85.87921 301.88917,85.87921 301.88917,85.87921 300.38339,94.355061 300.38339,94.355061 300.38339,94.355061 292.85366,94.355042 292.85366,94.355042 292.85366,94.355042 291.15499,85.897525 291.15499,85.897525 z" />
+            <Setter Property="RenderTransformOrigin" Value="0.5,4.3689" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Height" Value="10.004" />
+        </Style>
+        <Storyboard x:Key="ProgressAnimation" RepeatBehavior="Forever">
+            <ColorAnimation BeginTime="00:00:00.000" Duration="00:00:03.777" From="#EE000000" To="#00000000" Storyboard.TargetName="block17" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+            <ColorAnimation BeginTime="00:00:03.777" Duration="00:00:00.222" From="#FF000000" To="#EE000000" Storyboard.TargetName="block17" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+
+            <ColorAnimation BeginTime="00:00:00.000" Duration="00:00:03.555" From="#E0000000" To="#00000000" Storyboard.TargetName="block16" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+            <ColorAnimation BeginTime="00:00:03.555" Duration="00:00:00.444" From="#FF000000" To="#E0000000" Storyboard.TargetName="block16" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+
+            <ColorAnimation BeginTime="00:00:00.000" Duration="00:00:03.333" From="#D2000000" To="#00000000" Storyboard.TargetName="block15" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+            <ColorAnimation BeginTime="00:00:03.333" Duration="00:00:00.666" From="#FF000000" To="#D2000000" Storyboard.TargetName="block15" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+
+            <ColorAnimation BeginTime="00:00:00.000" Duration="00:00:03.111" From="#C4000000" To="#00000000" Storyboard.TargetName="block14" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+            <ColorAnimation BeginTime="00:00:03.111" Duration="00:00:00.888" From="#FF000000" To="#C4000000" Storyboard.TargetName="block14" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+
+            <ColorAnimation BeginTime="00:00:00.000" Duration="00:00:02.888" From="#B6000000" To="#00000000" Storyboard.TargetName="block13" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+            <ColorAnimation BeginTime="00:00:02.888" Duration="00:00:01.111" From="#FF000000" To="#B6000000" Storyboard.TargetName="block13" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+
+            <ColorAnimation BeginTime="00:00:00.000" Duration="00:00:02.666" From="#A8000000" To="#00000000" Storyboard.TargetName="block12" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+            <ColorAnimation BeginTime="00:00:02.666" Duration="00:00:01.333" From="#FF000000" To="#A8000000" Storyboard.TargetName="block12" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+
+            <ColorAnimation BeginTime="00:00:00.000" Duration="00:00:02.444" From="#9A000000" To="#00000000" Storyboard.TargetName="block11" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+            <ColorAnimation BeginTime="00:00:02.444" Duration="00:00:01.555" From="#FF000000" To="#9A000000" Storyboard.TargetName="block11" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+
+            <ColorAnimation BeginTime="00:00:00.000" Duration="00:00:02.222" From="#8C000000" To="#00000000" Storyboard.TargetName="block10" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+            <ColorAnimation BeginTime="00:00:02.222" Duration="00:00:01.777" From="#FF000000" To="#8E000000" Storyboard.TargetName="block10" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+
+            <ColorAnimation BeginTime="00:00:00.000" Duration="00:00:02.000" From="#7E000000" To="#00000000" Storyboard.TargetName="block9" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+            <ColorAnimation BeginTime="00:00:02.000" Duration="00:00:02.000" From="#FF000000" To="#8C000000" Storyboard.TargetName="block9" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+
+            <ColorAnimation BeginTime="00:00:00.000" Duration="00:00:01.777" From="#70000000" To="#00000000" Storyboard.TargetName="block8" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+            <ColorAnimation BeginTime="00:00:01.777" Duration="00:00:02.222" From="#FF000000" To="#70000000" Storyboard.TargetName="block8" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+
+            <ColorAnimation BeginTime="00:00:00.000" Duration="00:00:01.555" From="#62000000" To="#00000000" Storyboard.TargetName="block7" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+            <ColorAnimation BeginTime="00:00:01.555" Duration="00:00:02.444" From="#FF000000" To="#62000000" Storyboard.TargetName="block7" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+
+            <ColorAnimation BeginTime="00:00:00.000" Duration="00:00:01.333" From="#54000000" To="#00000000" Storyboard.TargetName="block6" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+            <ColorAnimation BeginTime="00:00:01.333" Duration="00:00:02.666" From="#FF000000" To="#54000000" Storyboard.TargetName="block6" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+
+            <ColorAnimation BeginTime="00:00:00.000" Duration="00:00:01.111" From="#46000000" To="#00000000" Storyboard.TargetName="block5" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+            <ColorAnimation BeginTime="00:00:01.111" Duration="00:00:02.888" From="#FF000000" To="#46000000" Storyboard.TargetName="block5" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+
+            <ColorAnimation BeginTime="00:00:00.000" Duration="00:00:00.888" From="#38000000" To="#00000000" Storyboard.TargetName="block4" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+            <ColorAnimation BeginTime="00:00:00.888" Duration="00:00:03.111" From="#FF000000" To="#38000000" Storyboard.TargetName="block4" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+
+            <ColorAnimation BeginTime="00:00:00.000" Duration="00:00:00.666" From="#2A000000" To="#00000000" Storyboard.TargetName="block3" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+            <ColorAnimation BeginTime="00:00:00.666" Duration="00:00:03.333" From="#FF000000" To="#2A000000" Storyboard.TargetName="block3" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+
+            <ColorAnimation BeginTime="00:00:00.000" Duration="00:00:00.444" From="#1C000000" To="#00000000" Storyboard.TargetName="block2" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+            <ColorAnimation BeginTime="00:00:00.444" Duration="00:00:03.555" From="#FF000000" To="#1C000000" Storyboard.TargetName="block2" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+
+            <ColorAnimation BeginTime="00:00:00.000" Duration="00:00:00.222" From="#0E000000" To="#00000000" Storyboard.TargetName="block1" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+            <ColorAnimation BeginTime="00:00:00.222" Duration="00:00:03.777" From="#FF000000" To="#0E000000" Storyboard.TargetName="block1" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+
+            <ColorAnimation BeginTime="00:00:00.000" Duration="00:00:04.000" From="#FF000000" To="#00000000" Storyboard.TargetName="block" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" />
+        </Storyboard>
+    </UserControl.Resources>
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard x:Name="ProgressAnimation_BeginStoryboard" Storyboard="{StaticResource ProgressAnimation}"/>
+        </EventTrigger>
+    </UserControl.Triggers>
+
+    <Canvas x:Name="LayoutRoot" VerticalAlignment="Top" Height="88" Width="88">
+        <TextBlock Text="Loading..." TextWrapping="Wrap" Canvas.Left="20.069" Canvas.Top="36.214"/>
+        <Grid Width="10.734" Height="10.004" Canvas.Left="38.614" Canvas.Top="0.331">
+            <Path x:Name="block" OpacityMask="#00000000">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="block1" OpacityMask="#0C000000">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="-160"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="block2" OpacityMask="#19000000">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="-140"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="block3" OpacityMask="#26000000">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="-120"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="block4" OpacityMask="#3D000000">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="-100"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="block5" OpacityMask="#56000000">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="-80"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="block6" OpacityMask="#64000000">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="-60"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="block7" OpacityMask="#72000000">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="-40"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="block8" OpacityMask="#80000000">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="-20"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="block9" OpacityMask="#8E000000"/>
+            <Path x:Name="block10" OpacityMask="#9C000000">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="20"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="block11" OpacityMask="#AA000000">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="40"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="block12" OpacityMask="#B8000000">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="60"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="block13" OpacityMask="#C6000000">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="80"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="block14" OpacityMask="#D4000000">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="100"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="block15" OpacityMask="#E2000000">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="120"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="block16" OpacityMask="#F0000000">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="140"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="block17" OpacityMask="Black">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="160"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Grid>
+    </Canvas>
+</UserControl>
